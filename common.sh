@@ -21,7 +21,7 @@ userstatus(){
         echo -e "\e[32m user already exist \e[0m"
     else
         useradd roboshop &>> ${logfile}   
-        status $?
+        status_check
     fi
 }
 
